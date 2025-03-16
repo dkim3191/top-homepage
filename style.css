@@ -2,19 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+img {
+    display: block;
 }
 
 body {
     width: 100vw;
+    max-width: 100%;
 }
 
 .header-diagonal-bg {
     position: absolute;
     top: 0;
-    width: 100vw;
+    left: 0;
+    width: 100%;
     height: 440px;
     background-color: rgb(48, 125, 177);
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
+    z-index: -1;
 }
 
 .wrapper {
@@ -198,9 +206,55 @@ p.contact-me-info {
     width: 50px;
 }
 
-.footer-img {
+.footer-img-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: black;
     width: 100%;
+}
+
+.footer-img {
+    width: min(100%, 430px);
     height: 250px; 
     object-fit: cover;
-    object-position: 0 -100px;
+    object-position: 0 35%;
+}
+
+@media (min-width: 768px) {
+    .header-wrapper {
+
+    }
+    .wrapper {
+        position: relative;
+        z-index: 1;
+        width: 400px;
+    }
+    .about-me {
+        width: 620px;
+        box-shadow: 5px 5px 5px rgb(192, 192, 192);
+        padding: 0 15px 80px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: white;
+    }
+    .title-name {
+        position: relative;
+        top: -110px;
+    }
+    .block {
+        width: 300px;
+        height: 250px;
+        border: 1px solid;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+    .about-me-title {
+        padding-top: 80px;
+    }
+    .header-icons {
+        display: none;
+    }
 }
