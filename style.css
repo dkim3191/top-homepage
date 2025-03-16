@@ -72,3 +72,58 @@ p {
 .icons img {
     width: 40px;
 }
+
+.my-work-title {
+    text-align: center;
+    margin: 150px 0 10px;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    margin: 20px;
+}
+
+.screenshot {
+    height: 300px;
+}
+
+.one {
+    background-color: purple;
+}
+
+.two {
+
+}
+
+.three {
+
+}
+
+.four {
+
+}
+
+.five {
+
+}
+
+.six {
+
+}
+
+.title-wrapper {
+
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.card-icons * {
+    width: 30px;
+}
